@@ -4,6 +4,8 @@
 
 @theme {
   --font-manrope: "Manrope", sans-serif;
+  --color-rose: #FF6895;
+  --color-ink: #1E1E1E
 }
 
 @custom-variant dark (&:is(.dark *));
