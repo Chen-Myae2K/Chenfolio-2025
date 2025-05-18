@@ -2,14 +2,12 @@ import React from "react";
 import { TextAnimate } from "./magicui/text-animate";
 import DateTimeLocation from "./ui/date-time-location";
 import ButtonHover from "./animation/button-hover";
+import Heading from "./ui/heading";
 
 const AboutSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
-      <div>
-        <h4 className="text-xl ">WHAT I LOVE TO DO*</h4>
-        <p className="text-rose font-medium text-lg">[About Me]</p>
-      </div>
+      <Heading title="What i love to do" subtitle="[About Me]" />
       <div className="my-10">
         <img src="/public/my_image.png" className="w-xs  object-cover" alt="" />
       </div>
