@@ -6,8 +6,7 @@ const RecentProjectSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
       <Heading title="Some of my selected work" subtitle="[Projects]" />
-   
-      <HorizontalScroll/>
+      <HorizontalScroll />
     </section>
   );
 };

@@ -2,11 +2,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
 const HorizontalScroll = () => {
-  return (
-
-      <HorizontalScrollCarousel />
-     
-  );
+  return <HorizontalScrollCarousel />;
 };
 
 const HorizontalScrollCarousel = () => {
@@ -19,7 +15,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] ">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <div className="sticky top-10 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
@@ -32,23 +28,14 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div
-      key={card.id}
-      className="group relative h-[550px] w-[800px] overflow-hidden bg-neutral-200"
-    >
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-      ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p>
-      </div>
+    <div key={card.id} className="group h-[700px] w-[800px] overflow-hidden ">
+      <img
+        src={card.url}
+        className="w-full h-[540px]  object-cover bg-white border rounded-2xl shadow-2xs "
+        alt=""
+      />
+      <p className="text-ink font-medium text-lg">{card.title}</p>
+      <p className="text-neutral-500 text-normal">{card.description}</p>
     </div>
   );
 };
@@ -57,38 +44,31 @@ export default HorizontalScroll;
 
 const cards = [
   {
-    url: "/imgs/abstract/1.jpg",
-    title: "Title 1",
+    url: "/public/next-ecommerce-shop-img.png",
     id: 1,
+    title: "Next Ecommerce Shop",
+    description: "Ecommerce website for clothes shop",
+    link: "",
   },
   {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
+    url: "/public/mm-pos-system-img.png",
     id: 2,
+    title: "SmartPOS",
+    description: "Point of sale system for small business",
+    link: "",
   },
   {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
+    url: "/public/khh-secco-web-img.png",
     id: 3,
+    title: "KHH SEECO",
+    description: "A Portfolio website for desiccant company",
+    link: "",
   },
   {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
+    url: "/public/sense-web-app-img.png",
     id: 4,
-  },
-  {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
-    id: 5,
-  },
-  {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
-    id: 7,
+    title: "SENSE WEB APP",
+    description: "Web application for planning tool software",
+    link: "",
   },
 ];

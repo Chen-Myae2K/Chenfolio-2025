@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/animation/smooth-scroll";
 import ContributeSection from "@/components/ContributeSection";
 import RecentProjectSection from "@/components/RecentProjectSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import TechStackSection from "@/components/TechStackSection";
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
         <ContributeSection />
         <RecentProjectSection />
         <ExperienceSection />
+        <TechStackSection />
       </SmoothScroll>
     </main>
   );

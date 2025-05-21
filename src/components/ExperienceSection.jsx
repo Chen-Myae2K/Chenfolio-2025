@@ -27,7 +27,7 @@ const ExperienceSection = () => {
     },
     {
       duration: "Dec 2024 - present",
-      role: "freelance web developer",
+      role: "Freelance Web Developer",
       detail: "",
       company: "",
       location: "",
