@@ -49,7 +49,6 @@ const ContributeSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
       <Heading title="What I Can Contribute" subtitle="[Expertise]" />
-      <div className="mt-20"></div>
       {tableList.map((list) => (
         <ContributeTable
           key={list.number}

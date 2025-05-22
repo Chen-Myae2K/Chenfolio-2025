@@ -4,13 +4,14 @@ import DateTimeLocation from "./ui/date-time-location";
 import ButtonHover from "./animation/button-hover";
 import Heading from "./ui/heading";
 import FadeInOut from "./animation/fade-in-out";
+import {myImage} from "../../public/my_image.png"
 
 const AboutSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
       <Heading title="What i love to do" subtitle="[About Me]" />
       <div className="my-10">
-        <img src="/public/my_image.png" className="w-xs  object-cover" alt="" />
+        <img src={myImage} className="w-xs  object-cover" alt="" />
       </div>
       <div className="flex flex-col w-1/2 mt-30 ms-auto text-3xl leading-snug gap-8">
         <FadeInOut>

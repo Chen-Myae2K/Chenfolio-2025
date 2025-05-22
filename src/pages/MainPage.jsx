@@ -6,6 +6,7 @@ import ContributeSection from "@/components/ContributeSection";
 import RecentProjectSection from "@/components/RecentProjectSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import TechStackSection from "@/components/TechStackSection";
+import ContactSection from "@/components/ContactSection";
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
         <RecentProjectSection />
         <ExperienceSection />
         <TechStackSection />
+        <ContactSection />
       </SmoothScroll>
     </main>
   );
