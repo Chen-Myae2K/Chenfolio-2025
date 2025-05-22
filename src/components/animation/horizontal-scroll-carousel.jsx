@@ -2,10 +2,10 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { ShinyButton } from "../magicui/shiny-button";
 import { ArrowRight } from "lucide-react";
-import {nextEcommerce} from "../../../public/next-ecommerce-shop-img.png";
-import {smartPOS} from "../../../public/mm-pos-system-img.png";
-import {khhSecco} from "../../../public/khh-secco-web-img.png";
-import {sense} from "../../../public/sense-web-app-img.png";
+import nextEcommerce from "../../../public/next-ecommerce-shop-img.png";
+import smartPOS from "../../../public/mm-pos-system-img.png";
+import khhSecco from "../../../public/khh-secco-web-img.png";
+import sense from "../../../public/sense-web-app-img.png";
 
 const HorizontalScroll = () => {
   return <HorizontalScrollCarousel />;

@@ -4,7 +4,7 @@ import DateTimeLocation from "./ui/date-time-location";
 import ButtonHover from "./animation/button-hover";
 import Heading from "./ui/heading";
 import FadeInOut from "./animation/fade-in-out";
-import {myImage} from "../../public/my_image.png"
+import myImage from "../../public/my_image.png"
 
 const AboutSection = () => {
   return (
