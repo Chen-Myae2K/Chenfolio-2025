@@ -6,11 +6,11 @@ const ContributeTable = ({ number, title, caption, category, tag }) => {
   return (
       <FadeInOut>
         <div className="flex justify-between items-start py-10 text-ink border-b border-ink/50">
-          <div className="text-rose font-medium text-lg">[{number}]</div>
+          <div className="text-sky font-medium text-lg">[{number}]</div>
           <div className="space-y-5 w-1/2">
             <div className="flex items-baseline justify-between">
               <p className="uppercase text-xl">{title}</p>
-              <p className="text-base font-medium text-rose text-right">
+              <p className="text-base font-medium text-sky text-right">
                 [{category}]
               </p>
             </div>

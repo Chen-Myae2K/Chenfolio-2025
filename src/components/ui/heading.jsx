@@ -9,7 +9,7 @@ const Heading = ({ title, subtitle }) => {
           {title}
         </TextAnimate>
       </h4>
-      <p className="text-rose font-medium text-lg">
+      <p className="text-sky font-medium text-lg">
         <TextAnimate animation="fadeIn" by="line" as="p">
           {subtitle}
         </TextAnimate>

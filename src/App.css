@@ -4,8 +4,19 @@
 
 @theme {
   --font-manrope: "Manrope", sans-serif;
-  --color-rose: #7E65FF;
-  --color-ink: #1E1E1E
+  --color-sky: #79baff;
+  --color-ink: #1e1e1e;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(42, 42, 42);
+  background: rgb(205, 234, 255);
+}
+
+::selection {
+  color: rgb(42, 42, 42);
+  background: rgb(205, 234, 255);
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -46,32 +57,51 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite
+    alternate;
   --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
   @keyframes shimmer-slide {
-  to {
-    transform: translate(calc(100cqw - 100%), 0);}}
+    to {
+      transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
   @keyframes spin-around {
-  0% {
-    transform: translateZ(0) rotate(0);}
-  15%, 35% {
-    transform: translateZ(0) rotate(90deg);}
-  65%, 85% {
-    transform: translateZ(0) rotate(270deg);}
-  100% {
-    transform: translateZ(0) rotate(360deg);}}
+    0% {
+      transform: translateZ(0) rotate(0);
+    }
+    15%,
+    35% {
+      transform: translateZ(0) rotate(90deg);
+    }
+    65%,
+    85% {
+      transform: translateZ(0) rotate(270deg);
+    }
+    100% {
+      transform: translateZ(0) rotate(360deg);
+    }
+  }
   @keyframes shimmer-slide {
-  to {
-    transform: translate(calc(100cqw - 100%), 0);}}
+    to {
+      transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
   @keyframes spin-around {
-  0% {
-    transform: translateZ(0) rotate(0);}
-  15%, 35% {
-    transform: translateZ(0) rotate(90deg);}
-  65%, 85% {
-    transform: translateZ(0) rotate(270deg);}
-  100% {
-    transform: translateZ(0) rotate(360deg);}}
+    0% {
+      transform: translateZ(0) rotate(0);
+    }
+    15%,
+    35% {
+      transform: translateZ(0) rotate(90deg);
+    }
+    65%,
+    85% {
+      transform: translateZ(0) rotate(270deg);
+    }
+    100% {
+      transform: translateZ(0) rotate(360deg);
+    }
+  }
 }
 
 :root {

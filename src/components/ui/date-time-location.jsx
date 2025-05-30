@@ -24,7 +24,7 @@ const DateTimeLocation = () => {
   const formattedTime = time.toLocaleTimeString();
 
   return (
-    <div className="flex  justify-evenly text-white/90 items-center text-lg font-manrope">
+    <div className="flex mx-auto w-[90%] absolute bottom-1 justify-evenly text-white/90 items-center text-lg font-manrope">
       <p>
         {location.city}/{location.country}
       </p>

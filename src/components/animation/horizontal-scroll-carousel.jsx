@@ -6,8 +6,10 @@ import nextEcommerce from "../../../public/next-ecommerce-shop-img.png";
 import smartPOS from "../../../public/mm-pos-system-img.png";
 import khhSecco from "../../../public/khh-secco-web-img.png";
 import sense from "../../../public/sense-web-app-img.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const HorizontalScroll = () => {
+  const navigate = useNavigate();
   return <HorizontalScrollCarousel />;
 };
 
@@ -45,12 +47,15 @@ const Card = ({ card }) => {
           <p className="text-ink font-medium text-lg">{card.title}</p>
           <p className="text-neutral-500 text-normal">{card.description}</p>
         </div>
-        <ShinyButton>
-          <div className="flex justify-between font-medium sm:text-xs lg:text-base items-center  text-ink">
-            <p>VIEW</p>
-            <ArrowRight strokeWidth={1} weight="light" />
-          </div>
-        </ShinyButton>
+
+        <Link to={`/project-detail/${card.id}`}>
+          <ShinyButton>
+            <div className="flex justify-between gap-2 font-medium sm:text-xs lg:text-base items-center  text-ink">
+              <p>VIEW</p>
+              <ArrowRight strokeWidth={1} weight="light" />
+            </div>
+          </ShinyButton>
+        </Link>
       </div>
     </div>
   );
@@ -61,7 +66,7 @@ export default HorizontalScroll;
 const cards = [
   {
     id: 1,
-    image : nextEcommerce,
+    image: nextEcommerce,
     title: "Next Ecommerce Shop",
     description: "Ecommerce website for clothes shop",
     link: "",

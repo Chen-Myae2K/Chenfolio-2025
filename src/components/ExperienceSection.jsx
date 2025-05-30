@@ -1,6 +1,8 @@
 import React from "react";
 import FadeInOut from "./animation/fade-in-out";
 import ButtonHover from "./animation/button-hover";
+import { ShinyButton } from "./magicui/shiny-button";
+import { ArrowDown } from "lucide-react";
 
 const ExperienceSection = () => {
   const experienceList = [
@@ -65,7 +67,12 @@ const ExperienceSection = () => {
           <div className="col-span-1"></div>
           <div className="col-span-1"></div>
           <div className="col-span-1">
-            <ButtonHover text="Download Resume" />
+            <ShinyButton>
+              <div className="flex justify-between gap-2 font-medium sm:text-xs lg:text-base items-center  text-ink">
+                <p>DOWNLOAD RESUME</p>
+                <ArrowDown strokeWidth={1} weight="light" />
+              </div>
+            </ShinyButton>
           </div>
         </div>
       </FadeInOut>

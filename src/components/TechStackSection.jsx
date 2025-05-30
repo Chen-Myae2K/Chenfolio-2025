@@ -8,7 +8,7 @@ const TechStackSection = () => {
   const skills = [
     {
       id: 1,
-      icon: <Code size={24} className="size-4 lg:size-6" color={"#7b61ff"} />,
+      icon: <Code size={24} className="size-4 lg:size-6" color={"#79baff"} />,
       title: "Frontend",
       list: [
         "TypeScript, JavaScript, HTML5, CSS3",
@@ -19,14 +19,14 @@ const TechStackSection = () => {
     },
     {
       id: 2,
-      icon: <Server size={24} className="size-4 lg:size-6" color={"#7b61ff"} />,
+      icon: <Server size={24} className="size-4 lg:size-6" color={"#79baff"} />,
       title: "Backend",
       list: ["C Sharp, Php, Python", "Laravel"],
     },
     {
       id: 3,
       icon: (
-        <Database size={24} className="size-4 lg:size-6" color={"#7b61ff"} />
+        <Database size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
       title: "Databases",
       list: ["PostgreSQL, MySQL, MongoDB", "AWS S3"],
@@ -34,7 +34,7 @@ const TechStackSection = () => {
     {
       id: 4,
       icon: (
-        <CloudSun size={24} className="size-4 lg:size-6" color={"#7b61ff"} />
+        <CloudSun size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
       title: "DevOps & Deployment",
       list: ["Vercel, Git, GitHub"],
@@ -42,7 +42,7 @@ const TechStackSection = () => {
     {
       id: 5,
       icon: (
-        <Palette size={24} className="size-4 lg:size-6" color={"#7b61ff"} />
+        <Palette size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
       title: "Tools & Collaboration",
       list: ["Jest, Figma, Postman, Taiga", "Jira, Trello, Notion"],
@@ -51,7 +51,7 @@ const TechStackSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
       <Heading title="The Ingredients" subtitle="[Tech Stack]" />
-      <div className="grid grid-cols-2 mt-10 gap-4">
+      <div className="grid grid-cols-2 mt-10">
         <IconCloudDemo />
         <div className="col-span-1 grid grid-cols-2">
           {skills.map((skill) => (

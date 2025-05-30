@@ -4,7 +4,9 @@ import DateTimeLocation from "./ui/date-time-location";
 import ButtonHover from "./animation/button-hover";
 import Heading from "./ui/heading";
 import FadeInOut from "./animation/fade-in-out";
-import myImage from "../../public/my_image.png"
+import myImage from "../../public/my_image.png";
+import { ShinyButton } from "./magicui/shiny-button";
+import { ArrowDown } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -35,7 +37,12 @@ const AboutSection = () => {
           <p>Let’s build something extraordinary together.</p>
         </FadeInOut>
         <FadeInOut>
-          <ButtonHover text="Drop me a line" />
+          <ShinyButton>
+            <div className="flex justify-between gap-2 font-medium sm:text-base lg:text-lg items-center  text-ink">
+              <p>Resume</p>
+              <ArrowDown strokeWidth={1} weight="light" />
+            </div>
+          </ShinyButton>
         </FadeInOut>
       </div>
     </section>

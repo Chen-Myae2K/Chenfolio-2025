@@ -7,11 +7,13 @@ import RecentProjectSection from "@/components/RecentProjectSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import TechStackSection from "@/components/TechStackSection";
 import ContactSection from "@/components/ContactSection";
+import NavBarSection from "@/components/NavBarSection";
 
 const MainPage = () => {
   return (
     <main>
       <SmoothScroll>
+        <NavBarSection />
         <HeroSection />
         <AboutSection />
         <ContributeSection />

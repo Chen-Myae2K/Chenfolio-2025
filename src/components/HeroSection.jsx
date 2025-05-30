@@ -8,9 +8,9 @@ const HeroSection = () => {
   const text = "Chen Myae Kay Khaing";
   const words = ["Frontend", "Backend", "Mobile", "Website"];
   return (
-    <section className="h-screen overflow-x-hidden bg-gradient-to-t from-[#7E65FF] via-[#9B84FF] to-[#CCBAFF] relative">
-      <div className="w-[90%] mx-auto">
-        <div className=" absolute bottom-1 ">
+    <section className="h-screen overflow-x-hidden bg-gradient-to-t from-[#5EACFF] via-[#7EBEFF] to-[#C4E1FF] relative">
+      <div className="  w-[90%] mx-auto ">
+        <div className="  absolute bottom-7 ">
           <div className="text-xl text-semibold w-full lg:w-2/3 lg:text-[35px] leading-11 text-white/80 font-manrope ">
             Meet your trusted <FlipWords words={words} /> developer, building
             dynamic digital experiences for web apps, SaaS, websites, and mobile
@@ -22,8 +22,8 @@ const HeroSection = () => {
             })} */}
             <TypingAnimation>Chen Myae Kay Khaing</TypingAnimation>
           </h1>
-          <DateTimeLocation />
         </div>
+        <DateTimeLocation />
       </div>
     </section>
   );
