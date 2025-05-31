@@ -36,7 +36,7 @@ const ExperienceSection = () => {
     },
   ];
   return (
-    <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
+    <section  className="w-[90%] mx-auto font-manrope py-30 text-ink">
       {experienceList.map((el, index) => (
         <FadeInOut>
           <div className="grid grid-cols-3  text-normal items-center border-t py-7 border-ink/20">

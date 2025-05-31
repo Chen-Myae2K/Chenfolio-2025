@@ -10,7 +10,7 @@ import { ArrowDown } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
+    <section id="about" className="w-[90%] mx-auto font-manrope py-30 text-ink">
       <Heading title="What i love to do" subtitle="[About Me]" />
       <div className="my-10">
         <img src={myImage} className="w-xs  object-cover" alt="" />

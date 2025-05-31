@@ -10,13 +10,13 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: rgb(42, 42, 42);
-  background: rgb(205, 234, 255);
+  color: #1e1e1e;
+  background: #cae4ff;
 }
 
 ::selection {
-  color: rgb(42, 42, 42);
-  background: rgb(205, 234, 255);
+  color: #1e1e1e;
+  background: #cae4ff;
 }
 
 @custom-variant dark (&:is(.dark *));

@@ -29,7 +29,10 @@ const ContactSection = () => {
     },
   ];
   return (
-    <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
+    <section
+      id="contact"
+      className="w-[90%] mx-auto font-manrope py-30 text-ink"
+    >
       <Heading title="Let's Connect, Thank you" subtitle="[Contacts]" />
       <div className="grid grid-cols-2 ">
         <div className="col-span-1"></div>

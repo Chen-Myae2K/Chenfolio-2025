@@ -11,7 +11,7 @@ const TechStackSection = () => {
       icon: <Code size={24} className="size-4 lg:size-6" color={"#79baff"} />,
       title: "Frontend",
       list: [
-        "TypeScript, JavaScript, HTML5, CSS3",
+        "TypeScript, JavaScript, Unity, Blender",
         "React, Next.js, Tailwind CSS",
         "Zustand, SWR, Context API",
         "React Hook Form, Axios, Expo",
@@ -49,7 +49,7 @@ const TechStackSection = () => {
     },
   ];
   return (
-    <section className="w-[90%] mx-auto font-manrope my-30 text-ink">
+    <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
       <Heading title="The Ingredients" subtitle="[Tech Stack]" />
       <div className="grid grid-cols-2 mt-10">
         <IconCloudDemo />

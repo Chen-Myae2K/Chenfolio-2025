@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import SmoothScroll from "@/components/animation/smooth-scroll";
@@ -8,6 +8,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import TechStackSection from "@/components/TechStackSection";
 import ContactSection from "@/components/ContactSection";
 import NavBarSection from "@/components/NavBarSection";
+import FooterSection from "@/components/FooterSection";
 
 const MainPage = () => {
   return (
@@ -21,6 +22,7 @@ const MainPage = () => {
         <ExperienceSection />
         <TechStackSection />
         <ContactSection />
+        <FooterSection />
       </SmoothScroll>
     </main>
   );

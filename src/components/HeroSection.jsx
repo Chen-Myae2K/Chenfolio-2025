@@ -8,7 +8,10 @@ const HeroSection = () => {
   const text = "Chen Myae Kay Khaing";
   const words = ["Frontend", "Backend", "Mobile", "Website"];
   return (
-    <section className="h-screen overflow-x-hidden bg-gradient-to-t from-[#5EACFF] via-[#7EBEFF] to-[#C4E1FF] relative">
+    <section
+      id="home"
+      className="h-screen overflow-x-hidden bg-gradient-to-t from-[#5EACFF] via-[#7EBEFF] to-[#C4E1FF] relative"
+    >
       <div className="  w-[90%] mx-auto ">
         <div className="  absolute bottom-7 ">
           <div className="text-xl text-semibold w-full lg:w-2/3 lg:text-[35px] leading-11 text-white/80 font-manrope ">
