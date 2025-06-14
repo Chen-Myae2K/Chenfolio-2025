@@ -1,6 +1,7 @@
 import { CircleArrowUp } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import GradientFineLine from "./ui/gradient-fine-line";
 
 const FooterSection = () => {
   const scrollToTop = () => {
@@ -12,11 +13,11 @@ const FooterSection = () => {
         <div className="flex justify-between items-center">
           <p>Chen Myae Kay Khaing © {new Date().getFullYear()}</p>
           <button className="cursor-pointer" onClick={scrollToTop}>
-            <CircleArrowUp  size={32} />
+            <CircleArrowUp size={32} />
           </button>
         </div>
       </div>
-      <div className="h-3 bg-gradient-to-r from-[#5FAEFF] via-[#89BCF2] to-[#6ab2ff]"></div>
+      <GradientFineLine />
     </section>
   );
 };

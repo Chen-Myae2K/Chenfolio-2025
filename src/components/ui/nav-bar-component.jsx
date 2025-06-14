@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import icon from "../../../public/icon.svg"
 
 const mobileNavItems = [
   { id: "home", navTitle: "home." },
@@ -97,10 +98,10 @@ const NavBarComponent = ({ sections }) => {
         <div className="overflow-hidden mix-blend-difference bg-transparent">
           <motion.div
             variants={hideNavItemsVariant}
-            className="font-mono size-6 lg:size-12 rounded-full cursor-pointer"
+            className="size-6 lg:size-12 rounded-full cursor-pointer"
             onClick={() => handleScrollToSection("home")}
           >
-            <img src="/icon.svg" alt="Logo" />
+            <img src={icon} alt="Logo" />
           </motion.div>
         </div>
 
@@ -168,7 +169,7 @@ const NavBarComponent = ({ sections }) => {
 
             <motion.ul variants={ulVariant} className="list-none px-6 w-full">
               {mobileNavItems.map((navItem) => (
-                <Link to={navItem.id} smooth={true} duration={500}>
+                <Link to={navItem.id} key={navItem.id} smooth={true} duration={500}>
                   <motion.li
                     key={navItem.id}
                     // onClick={() => handleScrollToSection(navItem.id)}

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import ProjectDetailSection from "./components/ProjectDetailSection";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 
 export const router = createBrowserRouter([
   {
@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     element: <MainPage />,
   },
   {
-    path: "/project-detail/:id",
-    element: <ProjectDetailSection />,
+    path: "/project-detail/:slug",
+    element: <ProjectDetailPage />,
   },
 ]);

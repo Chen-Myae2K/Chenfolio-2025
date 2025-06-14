@@ -2,11 +2,8 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { ShinyButton } from "../magicui/shiny-button";
 import { ArrowRight } from "lucide-react";
-import nextEcommerce from "../../../public/next-ecommerce-shop-img.png";
-import smartPOS from "../../../public/mm-pos-system-img.png";
-import khhSecco from "../../../public/khh-secco-web-img.png";
-import sense from "../../../public/sense-web-app-img.png";
 import { Link, useNavigate } from "react-router-dom";
+import useProjectStore from "@/store/useProjectStore";
 
 const HorizontalScroll = () => {
   const navigate = useNavigate();
@@ -20,12 +17,13 @@ const HorizontalScrollCarousel = () => {
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-70%"]);
+  const { projectList } = useProjectStore();
 
   return (
     <section ref={targetRef} className="relative h-[300vh] mt-10 ">
       <div className="sticky top-5 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex space-x-16">
-          {cards.map((card) => {
+          {projectList.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </motion.div>
@@ -48,7 +46,7 @@ const Card = ({ card }) => {
           <p className="text-neutral-500 text-normal">{card.description}</p>
         </div>
 
-        <Link to={`/project-detail/${card.id}`}>
+        <Link to={`/project-detail/${card.slug}`}>
           <ShinyButton>
             <div className="flex justify-between gap-2 font-medium sm:text-xs lg:text-base items-center  text-ink">
               <p>VIEW</p>
@@ -62,34 +60,3 @@ const Card = ({ card }) => {
 };
 
 export default HorizontalScroll;
-
-const cards = [
-  {
-    id: 1,
-    image: nextEcommerce,
-    title: "Next Ecommerce Shop",
-    description: "Ecommerce website for clothes shop",
-    link: "",
-  },
-  {
-    id: 2,
-    image: smartPOS,
-    title: "SmartPOS",
-    description: "Point of sale system for small business",
-    link: "",
-  },
-  {
-    id: 3,
-    image: khhSecco,
-    title: "KHH SEECO",
-    description: "A Portfolio website for desiccant company",
-    link: "",
-  },
-  {
-    id: 4,
-    image: sense,
-    title: "SENSE WEB APP",
-    description: "Web application for planning tool software",
-    link: "",
-  },
-];

@@ -104,7 +104,6 @@ const IconCloud = () => {
     "react",
     "android",
     "html5",
-    "css3",
     "express",
     "postgresql",
     "firebase",
@@ -116,7 +115,6 @@ const IconCloud = () => {
     "github",
     "gitlab",
     "androidstudio",
-    "sonarqube",
     "figma",
   ];
   const iconTags = iconSlugs.map((slug) => ({

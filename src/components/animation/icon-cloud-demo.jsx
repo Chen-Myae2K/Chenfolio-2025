@@ -6,7 +6,6 @@ const slugs = [
   "react",
   "android",
   "html5",
-  "css3",
   "express",
   "postgresql",
   "firebase",
@@ -18,7 +17,6 @@ const slugs = [
   "github",
   "gitlab",
   "androidstudio",
-  "sonarqube",
   "figma",
 ];
 

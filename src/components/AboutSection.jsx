@@ -19,7 +19,7 @@ const AboutSection = () => {
         <FadeInOut>
           {" "}
           <p>
-            Hi, I’m a developer with over 1 year of experience, passionate about
+            Hi, I’m a 21 year old developer with over 1 year of experience, passionate about
             crafting clean and user-friendly digital experiences. I specialize
             in blending technology with creativity to deliver functional,
             impactful solutions that prioritize simplicity and usability.

@@ -7,12 +7,12 @@ const ButtonHover = ({children}) => {
         <span className="relative inline-flex overflow-hidden">
           <div className="translate-y-0  transition duration-500 group-hover:-translate-y-[110%] ">
             <div className="flex items-center">
-              <p>{children}</p>
+              <div>{children}</div>
             </div>
           </div>
           <div className="absolute translate-y-[110%]  transition duration-500 group-hover:translate-y-0 ">
             <div className="flex items-center">
-              <p>{children}</p>
+              <div>{children}</div>
             </div>
           </div>
         </span>

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import SmoothScroll from "@/components/animation/smooth-scroll";
@@ -9,8 +9,23 @@ import TechStackSection from "@/components/TechStackSection";
 import ContactSection from "@/components/ContactSection";
 import NavBarSection from "@/components/NavBarSection";
 import FooterSection from "@/components/FooterSection";
+import Lenis from "lenis";
 
 const MainPage = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    // Scroll to the top after Lenis initializes
+    setTimeout(() => {
+      lenis.scrollTo(0, { immediate: true });
+    }, 100);
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <main>
       <SmoothScroll>
