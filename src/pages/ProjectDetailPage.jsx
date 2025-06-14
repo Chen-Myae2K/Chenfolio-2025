@@ -10,31 +10,13 @@ import { useParams } from "react-router-dom";
 
 const ProjectDetailPage = () => {
   useEffect(() => {
-    const lenis = new Lenis();
-
-    // Scroll to the top after Lenis initializes
-    setTimeout(() => {
-      lenis.scrollTo(0, { immediate: true });
-    }, 100);
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
-  const { slug } = useParams();
-  const { projectList } = useProjectStore();
-
-  const projectDetail = projectList.find((el) => el.slug === slug);
   return (
     <SmoothScroll>
       <NavBarSection />
       <GradientFineLine />
-      <ProjectDetailSection
-        key={projectDetail.id}
-        projectDetail={projectDetail}
-      />
+      <ProjectDetailSection />
       <FooterSection />
     </SmoothScroll>
   );
