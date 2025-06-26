@@ -52,7 +52,7 @@ const useProjectStore = create((set) => ({
         year: "2024",
         mainActivities: [
           {
-            role: "Full-stack Developer",
+            role: "Frontend Developer",
             serviceProvided:
               "MVVM Architecture Development, State Management Implementation, Backend API Development, Database Integration",
           },

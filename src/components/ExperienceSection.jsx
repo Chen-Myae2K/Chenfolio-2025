@@ -18,7 +18,7 @@ const ExperienceSection = () => {
       role: "Design & Development Support",
       detail: "full-time, volunteer",
       company: "The Explorers",
-      location: "Design Studio,(Bangkok,TH)",
+      location: "Design Studio,(Yangon, MM)",
     },
     {
       duration: "Jan 2025 - Mar 2025",
