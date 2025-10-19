@@ -1,6 +1,5 @@
 import React from "react";
 import FadeInOut from "./animation/fade-in-out";
-import ButtonHover from "./animation/button-hover";
 import { ShinyButton } from "./magicui/shiny-button";
 import { ArrowDown } from "lucide-react";
 
@@ -35,6 +34,16 @@ const ExperienceSection = () => {
       location: "",
     },
   ];
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/public/resume/ChenMyaeKayKhaing_Resume.pdf"; 
+    link.download = "ChenMyaeKayKhaing_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
       {experienceList.map((el, index) => (
@@ -67,7 +76,7 @@ const ExperienceSection = () => {
           <div className="col-span-1"></div>
           <div className="col-span-1"></div>
           <div className="col-span-1">
-            <ShinyButton>
+            <ShinyButton onClick={handleDownload}>
               <div className="flex justify-between gap-2 font-medium sm:text-xs lg:text-base items-center  text-ink">
                 <p>DOWNLOAD RESUME</p>
                 <ArrowDown strokeWidth={1} weight="light" />

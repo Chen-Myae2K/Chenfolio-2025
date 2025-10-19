@@ -12,14 +12,14 @@ const HeroSection = () => {
       id="home"
       className="h-screen overflow-x-hidden bg-gradient-to-t from-[#5EACFF] via-[#7EBEFF] to-[#C4E1FF] relative"
     >
-      <div className="  w-[90%] mx-auto ">
-        <div className="  absolute bottom-7 ">
-          <div className="text-xl text-semibold w-full lg:w-2/3 lg:text-[35px] leading-11 text-white/80 font-manrope ">
+      <div className="w-[90%] mx-auto ">
+        <div className="absolute bottom-38 lg:bottom-14 ">
+          <div className="w-full lg:w-2/3 lg:text-[35px] text-[22px] lg:leading-11 text-white/80 font-manrope ">
             Meet your trusted <FlipWords words={words} /> developer, building
             dynamic digital experiences for web apps, SaaS, websites, and mobile
             applications.
           </div>
-          <h1 className="font-manrope  font-extrabold leading-16  lg:mb-1 lg:leading-tight text-[12vw] lg:text-[8vw] text-nowrap text-white text-whitepointer-events-none whitespace-pre-wrap lg:bg-gradient-to-b  from-9c81ff to-white/90 bg-clip-text lg:text-transparent">
+          <h1 className="font-manrope  font-extrabold lg:mb-1 lg:leading-tight text-[15vw] lg:text-[8vw] text-nowrap text-whitepointer-events-none whitespace-pre-wrap bg-gradient-to-b  from-9c81ff to-white/90 bg-clip-text text-transparent">
             {/* {text.split("").map((letter, index) => {
               return <Letter letter={letter} key={`${index}-${letter}`} />;
             })} */}

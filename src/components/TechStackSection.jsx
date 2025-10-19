@@ -51,8 +51,10 @@ const TechStackSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
       <Heading title="The Ingredients" subtitle="[Tech Stack]" />
-      <div className="grid grid-cols-2 mt-10">
-        <IconCloudDemo />
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-10">
+        <div className="col-span-1">
+          <IconCloudDemo />
+        </div>
         <div className="col-span-1 grid grid-cols-2">
           {skills.map((skill) => (
             <FadeInOut key={skill.id} className="mb-10">

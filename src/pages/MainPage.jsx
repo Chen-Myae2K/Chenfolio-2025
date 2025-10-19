@@ -9,7 +9,7 @@ import TechStackSection from "@/components/TechStackSection";
 import ContactSection from "@/components/ContactSection";
 import NavBarSection from "@/components/NavBarSection";
 import FooterSection from "@/components/FooterSection";
-import Lenis from "lenis";
+
 
 const MainPage = () => {
   useEffect(() => {

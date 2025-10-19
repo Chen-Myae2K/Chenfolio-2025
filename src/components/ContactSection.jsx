@@ -72,7 +72,7 @@ const ContactSection = () => {
             <Heading title="" subtitle="[Email]" />
           </div>
           <div className="col-span-1 border-b border-gray-500 py-5">
-            <Link to="mailto:tracycmkk@gmail.com" className="text-3xl  ">
+            <Link to="mailto:tracycmkk@gmail.com" className="lg:text-3xl text-lg  ">
               tracycmkk@gmail.com
             </Link>
           </div>
