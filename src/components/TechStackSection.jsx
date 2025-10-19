@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "./ui/heading";
 import { IconCloudDemo } from "./animation/icon-cloud-demo";
-import { CloudSun, Code, Database, Dot, Palette, Server } from "lucide-react";
+import { CloudSun, Code, Database, Palette, Server } from "lucide-react";
 import FadeInOut from "./animation/fade-in-out";
 
 const TechStackSection = () => {
@@ -11,9 +11,10 @@ const TechStackSection = () => {
       icon: <Code size={24} className="size-4 lg:size-6" color={"#79baff"} />,
       title: "Frontend",
       list: [
-        "TypeScript, JavaScript, Unity, Blender",
-        "React, Next.js, Tailwind CSS",
-        "Zustand, SWR, Context API",
+        "TypeScript, JavaScript",
+        "Unity, Blender",
+        "React, Next.js, Tailwind",
+        "Zustand, SWR",
         "React Hook Form, Axios, Expo",
       ],
     },
@@ -29,27 +30,27 @@ const TechStackSection = () => {
         <Database size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
       title: "Databases",
-      list: ["PostgreSQL, MySQL, MongoDB", "AWS S3"],
+      list: ["SQLite, MySQL", "AWS S3, Digital Ocean"],
     },
     {
       id: 4,
       icon: (
         <CloudSun size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
-      title: "DevOps & Deployment",
-      list: ["Vercel, Git, GitHub"],
+      title: "DevOps",
+      list: ["Vercel, Git, GitHub, Netlify", "Docker"],
     },
     {
       id: 5,
       icon: (
         <Palette size={24} className="size-4 lg:size-6" color={"#79baff"} />
       ),
-      title: "Tools & Collaboration",
-      list: ["Jest, Figma, Postman, Taiga", "Jira, Trello, Notion"],
+      title: "Tools",
+      list: ["Figma, Postman, Taiga", "Jira, Trello, Notion"],
     },
   ];
   return (
-    <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
+    <section className="w-[90%] mx-auto font-manrope pt-30 text-ink">
       <Heading title="The Ingredients" subtitle="[Tech Stack]" />
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-10">
         <div className="col-span-1">

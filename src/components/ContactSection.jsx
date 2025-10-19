@@ -31,10 +31,10 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="w-[90%] mx-auto font-manrope py-30 text-ink"
+      className="w-[90%] mx-auto font-manrope pt-30 text-ink"
     >
       <Heading title="Let's Connect, Thank you" subtitle="[Contacts]" />
-      <div className="grid grid-cols-2 ">
+      <div className="grid lg:grid-cols-2 ">
         <div className="col-span-1"></div>
         <div
           onMouseLeave={() => {
@@ -72,7 +72,10 @@ const ContactSection = () => {
             <Heading title="" subtitle="[Email]" />
           </div>
           <div className="col-span-1 border-b border-gray-500 py-5">
-            <Link to="mailto:tracycmkk@gmail.com" className="lg:text-3xl text-lg  ">
+            <Link
+              to="mailto:tracycmkk@gmail.com"
+              className="lg:text-3xl text-lg  "
+            >
               tracycmkk@gmail.com
             </Link>
           </div>

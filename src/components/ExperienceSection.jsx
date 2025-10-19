@@ -27,17 +27,17 @@ const ExperienceSection = () => {
       location: "CBO, (Yangon, MM)",
     },
     {
-      duration: "Dec 2024 - present",
+      duration: "Sep 2025 - present",
       role: "Freelance Web Developer",
-      detail: "",
-      company: "",
-      location: "",
+      detail: "part-time developer",
+      company: "MMSIT",
+      location: "Yangon, MM",
     },
   ];
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/public/resume/ChenMyaeKayKhaing_Resume.pdf"; 
+    link.href = "/public/resume/ChenMyaeKayKhaing_Resume.pdf";
     link.download = "ChenMyaeKayKhaing_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -45,11 +45,11 @@ const ExperienceSection = () => {
   };
 
   return (
-    <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
+    <section className="w-[90%] mx-auto font-manrope pt-30 text-ink">
       {experienceList.map((el, index) => (
         <FadeInOut key={index}>
           <div className="grid grid-cols-3  text-normal items-center border-t py-7 border-ink/20">
-            <div className="flex col-span-1 items-center  justify-start space-x-4">
+            <div className="flex lg:col-span-1 col-span-3 items-center justify-between lg:justify-start space-x-4">
               <p>{el.duration}</p>
               <div
                 className={
@@ -61,8 +61,10 @@ const ExperienceSection = () => {
                 {el.detail}
               </div>
             </div>
-            <div className="col-span-1 text-neutral-500">{el.role}</div>
-            <div className="col-span-1">
+            <div className="max-md:hidden col-span-1 text-neutral-500">
+              {el.role}
+            </div>
+            <div className="col-span-1 max-md:col-span-full max-md:mt-4 text-right ">
               {el.company}
               <span className="text-neutral-500 text-[13px] ms-2">
                 {el.location}
@@ -72,7 +74,7 @@ const ExperienceSection = () => {
         </FadeInOut>
       ))}
       <FadeInOut>
-        <div className="grid grid-cols-3  text-normal items-center py-7 ">
+        <div className="grid lg:grid-cols-3  text-normal items-center py-5 ">
           <div className="col-span-1"></div>
           <div className="col-span-1"></div>
           <div className="col-span-1">

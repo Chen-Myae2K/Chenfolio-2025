@@ -18,15 +18,14 @@ const AboutSection = () => {
     document.body.removeChild(link);
   };
   return (
-    <section id="about" className="w-[90%] mx-auto font-manrope py-30 text-ink">
+    <section id="about" className="w-[90%] mx-auto font-manrope pt-30 text-ink">
       <Heading title="What i love to do" subtitle="[About Me]" />
       <div className="max-lg:grid-cols-1">
         <div className="my-10 max-md:col-span-1">
-          <img src={myImage} className="w-xs object-cover" alt="" />
+          <img src={myImage} className="lg:w-xs w-2xs object-cover" alt="" />
         </div>
-        <div className="max-md:col-span-1 flex flex-col lg:w-1/2 mt-30 ms-auto text-xl lg:text-3xl leading-snug gap-8">
+        <div className="max-md:col-span-1 flex flex-col lg:w-1/2 mt-20 ms-auto text-xl lg:text-3xl leading-snug gap-8">
           <FadeInOut>
-            {" "}
             <p>
               Hi, I’m a 21 year old developer with over 1 year of experience,
               passionate about crafting clean and user-friendly digital
