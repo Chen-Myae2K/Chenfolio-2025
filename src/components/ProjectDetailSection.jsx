@@ -24,7 +24,7 @@ const ProjectDetailSection = () => {
   return (
     <section className="w-[90%] mx-auto font-manrope py-30 text-ink">
       <FadeInOut>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col gap-3 ">
             <p className="text-4xl ">{projectDetail.title}</p>
             <p className="text-xl text-neutral-500">
@@ -45,7 +45,7 @@ const ProjectDetailSection = () => {
         </div>
       </FadeInOut>
       <FadeInOut>
-        <div className="grid grid-cols-3 py-10 gap-5">
+        <div className="grid lg:grid-cols-3 py-10 gap-5">
           <div className="col-span-1">
             <p className="text-xl font-medium ">{projectDetail.description}</p>
           </div>
